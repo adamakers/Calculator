@@ -1,0 +1,206 @@
+/************************
+    RESET
+************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/************************
+    STYLES
+************************/
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #C5BAAF;
+  font-family: 'Cousine', monospace;
+}
+
+
+/* ===== CALCBODY ===== */
+
+.calc-body {
+  border-radius: 10px;
+  background-color: #909590;
+  width: 350px;
+  margin: 125px auto 0;
+  border: 3px solid #717571;
+  overflow: hidden;
+  box-shadow: inset 0px 2px 30px rgba(0,0,0,.5),
+              5px 4px 30px 3px rgba(0,0,0,.4);
+}
+
+.calc-header,
+.display-cont {
+  background-color: #000F08;
+}
+
+.calc-header {
+  padding: 10px;
+}
+
+.calc-name,
+.solar {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.calc-name {
+  font-weight: bold;
+  margin-right: -6px;
+  color: white;
+  padding-left: 10px
+}
+
+.calc-name h1 {
+  margin: 5px 0;
+  font-size: 1.6rem;
+}
+
+.calc-name h2 {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.solar {
+  height: 55px;
+  text-align: center;
+  border: 3px solid black;
+  background-color: #495B51;
+}
+
+.solar-panel {
+  width: 24%;
+  height: 100%;
+  background-color: #424B54;
+  display: inline-block;
+  margin: 0 -2px;
+  vertical-align: top;
+  box-shadow: inset -2px 1px 6px rgba(0,0,0,.5)
+}
+
+/* ===== CALC DISPLAY ===== */
+
+.display-cont {
+  padding-bottom: 25px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: inset 0 -3px 6px -1px rgba(255,255,255,0.55);
+}
+
+.display {
+  width: 90%;
+  height: 90px;
+  padding-right: 10px;
+  background-color: #849182;
+  margin: 0 auto;
+  box-shadow: inset -2px 4px 8px rgba(0,0,0,.5)
+}
+
+.input-nums {
+  padding-top: 1rem;
+  font-size: 5rem;
+  text-align: right;
+  height: 50px;
+}
+
+.input-operation {
+  font-size: 3rem;
+  text-align: right;
+  height: 40px;
+  margin-top: 5px;
+}
+
+/* ===== BUTTONS ===== */
+
+.button-cont {
+  padding-top: 2rem;
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  
+}
+
+.square {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  border: none;
+  margin: 8px 5px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 2px -1px rgba(0,0,0, .5),
+              inset 0 -2px 6px rgba(0,0,0,.4);
+}
+
+.square:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,0.5), 
+              inset 0 -1px 6px rgba(0,0,0,0.4);
+}
+
+.clears {
+  background-color: #E26D5C;
+}
+
+.tall {
+  height: 117px;
+  position: absolute;
+  z-index: 0;
+}
